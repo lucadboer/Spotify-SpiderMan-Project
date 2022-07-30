@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  background-image: url(background-miranha.png);
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.753);
+  padding-bottom: 15px;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.menu:hover {
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+.menu .logo-spotify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.menu .logo-spotify img {
+  width: 100px;
+  height: 80px;
+}
+
+.menu .logo-spotify a {
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FCF7F7;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+
+.menu .logo-spotify a:hover {
+  color-scheme: #1ED760;
+}
+
+.menu .menu-nav {
+  margin-right: 150px;
+}
+
+.menu .menu-nav a {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FCF7F7;
+  letter-spacing: 1.2px;
+  font-size: 25px;
+  text-decoration: none;
+  margin-right: 80px;
+}
+
+.menu .menu-nav a:hover {
+  color: #9c101e;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+.conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.conteudo .cont-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 50px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.753);
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.conteudo .cont-principal:hover {
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+.conteudo .cont-principal .cont-principal-titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FCF7F7;
+  letter-spacing: 1.2px;
+  font-size: 35px;
+  margin-bottom: -20px;
+}
+
+.conteudo .cont-principal .cont-principal-subtitulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FCF7F7;
+  letter-spacing: 1.2px;
+  font-size: 28px;
+  width: 650px;
+}
+
+.conteudo .cont-principal .cont-principal-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #FCF7F7;
+  background-color: darkblue;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+  cursor: pointer;
+}
+
+.conteudo .cont-principal .cont-principal-btn:hover {
+  background-color: rgba(255, 0, 0, 0.404);
+  -webkit-box-shadow: 2px 5px 5px rgba(156, 16, 30, 0.37);
+          box-shadow: 2px 5px 5px rgba(156, 16, 30, 0.37);
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.conteudo .cont-principal-img {
+  width: 700px;
+  height: 700px;
+}
+
+.conteudo .cont-principal-img img {
+  position: absolute;
+  top: 160px;
+}
+/*# sourceMappingURL=main.css.map */

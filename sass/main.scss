@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Colors
+
+$color-btn: darkblue;
+$color-main: #9c101e;
+$color-text: #FCF7F7;
+$color-background: rgba(0, 0, 0, 0.753); 
+
+// Fonts
+
+$font-main: "Poppins", sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-image: url(background-miranha.png);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin formater-text {
+    font-family: $font-main;
+    font-size: 30px;
+    font-weight: 400;
+    color: $color-text;
+    letter-spacing: 1.2px;
+}
+
+@mixin formater-btn {
+    font-family: $font-main;
+    font-size: 35px;
+    font-weight: 400;
+    color: $color-text;
+    background-color: $color-btn;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+    cursor: pointer;
+}
+
+.menu {
+    @include flexbox();
+    background-color: $color-background;
+    padding-bottom: 15px;
+    transition: all linear 0.4s;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.930);
+    }
+    .logo-spotify {
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+        margin-top: 10px;
+
+        img {
+            width: 100px;
+            height: 80px;
+        }
+
+        a {
+            margin-left: 20px;
+            @include formater-text();
+            text-decoration: none;
+            &:hover {
+                color-scheme: #1ED760 ;
+            }
+        }
+    }
+
+    .menu-nav {
+        margin-right: 150px;
+
+        a {
+            @include formater-text();
+            font-size: 25px;
+            text-decoration: none;
+            margin-right: 80px;
+
+            &:hover {
+                color: $color-main;
+                transition: all linear 0.2s;
+                
+            }
+        }
+    }
+}
+
+.conteudo {
+    @include flexbox();
+    justify-content: space-around;
+
+    .cont-principal {
+        @include flexbox();
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 50px;
+        padding: 20px;
+        width: 500px;
+        border-radius: 25px;
+        background-color: $color-background;
+        transition: all linear 0.4s;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.930);
+        }
+
+        .cont-principal-titulo {
+            @include formater-text();
+            font-size: 35px;
+            margin-bottom: -20px;
+        }
+
+        .cont-principal-subtitulo {
+            @include formater-text();
+            font-size: 28px;
+            width: 650px; 
+        }
+
+        .cont-principal-btn {
+            @include formater-btn();
+            
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.404);
+                box-shadow: 2px 5px 5px rgba(156, 16, 30, 0.37);
+                transition: all linear 0.3s
+            }   
+        }
+    }
+
+    .cont-principal-img {
+        img {
+            position: absolute;
+            top: 160px;
+        }
+        width: 700px;
+        height: 700px;
+    }
+}
+
+//https://www.figma.com/file/PedmB7dZO424RpyPaGAu36/SPOTIFYxSPIDERMAN-(Community)?node-id=9%3A14
